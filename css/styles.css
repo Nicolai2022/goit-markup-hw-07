@@ -65,7 +65,7 @@ img {
   text-decoration: none;
 }
 
-.logo-dark {
+.logo__dark {
   color: var(--logo-dark-color);
 }
 
@@ -505,7 +505,7 @@ img {
   margin-left: 70px;
 }
 
-.logo-liht {
+.logo__liht {
   color: var(--primery-white-color);
 }
 
@@ -805,11 +805,11 @@ img {
 
 /* Підпишіться на розсилку */
 
-.footer-newsletter {
+.block-newsletter {
   margin-left: 93px;
 }
 
-.footer-title-newsletter {
+.block-newsletter__text {
   margin: 0;
   color: var(--primery-white-color);
   font-weight: 700;
@@ -880,7 +880,16 @@ img {
 textarea {
   resize: none;
 }
+/* 
+.modal-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ padding: 40px;
 
+  width: 100%;
+} */
 
 .form-title {
   font-weight: 700;
@@ -892,7 +901,7 @@ textarea {
   color: var(--primery-text-color);
 }
 
-.modal-form-title {
+.form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -904,13 +913,13 @@ textarea {
 }
 
 
-.modal-form-input {
+.form__input {
   position: relative;
   display: block;
   margin-top: 4px;
 }
 
-.form-input {
+.form__area {
   padding-left: 42px;
   display: block;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -925,20 +934,20 @@ textarea {
   outline: none;
 }
 
-.form-input:focus + .icon-form {
+.form__area:focus + .form__icon {
   fill: var(--accent-color);
 }
 
-.form-input:hover + .icon-form {
+.form__area:hover + .form__icon {
   fill: var(--accent-color);
 }
 
-.form-input:hover,
-.form-input:focus {
+.form__area:hover,
+.form__area:focus {
   border-color: var(--accent-color);
 }
 
-.icon-form {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -948,22 +957,13 @@ textarea {
   transition: fill 250ms var(--transform-function);
 }
 
-.form-item:not(:last-child) {
+.form__item:not(:last-child) {
   /* position: relative; */
   margin-bottom: 10px;
 }
 
-/* .form-list {
-margin-top: 10px;
-} */
 
-.form-label {
-  /* position: absolute; */
-  /* left: 0px; */
-  /* top: 10%; */
-
-  /* transform: translateY(-110%); */
-
+.form__field {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -971,15 +971,11 @@ margin-top: 10px;
   color: var(--title-text-color);
 }
 
-.form-comment-textarea {
+.form-comment__text {
   margin-top: 4px;
   display: block;
   width: 448px;
   height: 120px;
-
-  /* width: 416px;
-  height: 96px; */
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -996,23 +992,9 @@ margin-top: 10px;
   outline: none;
 }
 
-.form-comment-textarea:hover,
-.form-comment-textarea:focus {
+.form-comment__text:hover,
+.form-comment__text:focus {
   border-color: var(--accent-color);
-}
-
-.form-label-comment {
-  /* position: absolute;
-  top: 44%;
-  transform: translateY(150%); */
-
-  /* font-family: 'Roboto';
-  font-style: normal; */
-  /* font-weight: 400; */
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  color: var(--title-text-color);
 }
 
 .form-comment {
@@ -1020,7 +1002,7 @@ margin-top: 10px;
   margin-top: 10px;
 }
 
-.form-button {
+.button--success {
   padding: 10px 52px;
   font-weight: 700;
   font-size: 16px;
@@ -1042,8 +1024,8 @@ margin-top: 10px;
   transition: background-color 250ms var(--transform-function);
 }
 
-.form-button:hover,
-.form-button:focus {
+.button--success:hover,
+.button--success:focus {
   background-color: #188ce8;
 }
 
@@ -1076,14 +1058,14 @@ margin-top: 10px;
   justify-content: center;
 }
 
-.checkbox:checked + .icon-box {
+.checkbox:checked + .form-topic__box {
   background-color: var(--accent-color);
   fill: var(--accent-color);
   border: none;
   cursor: pointer;
 }
 
-.icon-box {
+.form-topic__box {
   display: flex;
   border: 2px solid var(--primery-text-color);
   border-radius: 3px;
@@ -1101,7 +1083,7 @@ margin-top: 10px;
   left: 20px;
 }
 
-.form-text {
+.form-topic__text {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -1110,7 +1092,7 @@ margin-top: 10px;
   cursor: pointer;
 }
 
-.form-link {
+.form-topic__link {
   display: inline-block;
   margin-left: 5px;
   font-size: 14px;
@@ -1120,6 +1102,6 @@ margin-top: 10px;
   text-decoration: underline;
 }
 
-.icon-checkbox-on {
+.form-topic__icon {
   fill: transparent;
 }

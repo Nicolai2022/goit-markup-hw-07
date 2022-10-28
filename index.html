@@ -20,7 +20,7 @@
       <div class="container header__container">
         <nav class="site-nav">
           <a class="logo" lang="en" href="./index.html"
-            >Web<span class="logo-dark">Studio</span></a
+            >Web<span class="logo__dark">Studio</span></a
           >
           <ul class="site-nav__list list">
             <li class="site-nav__item">
@@ -479,7 +479,7 @@
         <div class="footer__desktop">
           <div class="footer__block">
             <a class="logo" lang="en" href="./index.html"
-              >Web<span class="logo-liht">Studio</span></a
+              >Web<span class="logo__liht">Studio</span></a
             >
           </div>
           <address class="address">
@@ -564,8 +564,8 @@
             </ul>
           </div>
         </div>
-        <div class="footer-newsletter">
-          <p class="footer-title-newsletter">Підпишіться на розсилку</p>
+        <div class="block-newsletter">
+          <p class="block-newsletter__text">Підпишіться на розсилку</p>
           <form class="block"><input
             type="email"
             class="block__email"
@@ -590,49 +590,49 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button-close" data-modal-close>
-          <svg class="icon-button-close" width="11px" height="11px">
+          <svg class="modal__icon" width="11px" height="11px">
             <use href="./images/symbol-defs.svg#icon-button-close"></use>
           </svg>
         </button>
 
         <div class="modal-form">
-          <form class="js-speaker-form">
+          <form class="form js-speaker-form">
           
-              <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+              <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
         
-            <ul class="list form-list">
-              <li class="form-item">
-                <label for="name" class="form-label">Ім'я</label>
-                <span class="modal-form-input"><input type="text" class="form-input" name="name" id="name" />
-                <svg class="icon-form" width="18px" height="18px">
+            <ul class="list form__list">
+              <li class="form__item">
+                <label for="name" class="form__field">Ім'я</label>
+                <span class="form__input"><input type="text" class="form__area" name="name" id="name" />
+                <svg class="form__icon" width="18px" height="18px">
                   <use href="./images/symbol-defs.svg#icon-person"></use>
                 </svg></span>
               </li>
-              <li class="form-item">
-                <label for="tel" class="form-label">Телефон</label>
-                <span class="modal-form-input"><input type="tel" class="form-input" name="tel" id="tel" />
-                <svg class="icon-form" width="18px" height="18px">
+              <li class="form__item">
+                <label for="tel" class="form__field">Телефон</label>
+                <span class="form__input"><input type="tel" class="form__area" name="tel" id="tel" />
+                <svg class="form__icon" width="18px" height="18px">
                   <use href="./images/symbol-defs.svg#icon-phone"></use>
                 </svg></span>
               </li>
-              <li class="form-item">
-                <label for="email" class="form-label">Пошта</label>
-                <span class="modal-form-input"><input
+              <li class="form__item">
+                <label for="email" class="form__field">Пошта</label>
+                <span class="form__input"><input
                   type="email"
-                  class="form-input"
+                  class="form__area"
                   name="email"
                   id="email"
                 />
-                <svg class="icon-form" width="18px" height="18px">
+                <svg class="form__icon" width="18px" height="18px">
                   <use href="./images/symbol-defs.svg#icon-email"></use>
                 </svg></span>
               </li>
             </ul>
 
             <div class="form-comment">
-              <label for="comment" class="form-label-comment">Коментар</label>
+              <label for="comment" class="form__field">Коментар</label>
               <textarea
-                class="form-comment-textarea"
+                class="form-comment__text"
                 name="comment"
                 id="comment"
                 rows="10"
@@ -647,16 +647,16 @@
                 name="topic"
                 value="Приймаю умови договору"
               />
-              <span class="icon-box"
-                ><svg class="icon-checkbox-on" width="16px" height="15px">
+              <span class="form-topic__box"
+                ><svg class="form-topic__icon" width="16px" height="15px">
                   <use
                     href="./images/symbol-defs.svg#icon-checked"
                   ></use></svg></span
-              ><span class="form-text">Погоджуюся з розсилкою та приймаю</span
-              ><a class="form-link" href="#">Умови договору</a></label
+              ><span class="form-topic__text">Погоджуюся з розсилкою та приймаю</span
+              ><a class="form-topic__link" href="#">Умови договору</a></label
             >
 
-            <button type="submit" class="form-button">Відправити</button>
+            <button type="submit" class="button button--success">Відправити</button>
           </form>
         </div>
       </div>
