@@ -1,0 +1,130 @@
+.header {
+    border: none;
+    border-bottom: 1px solid #ececec;
+    margin: 0 auto;
+    border: 1px solid #ececec;
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+  
+  .logo__dark {
+    color: var(--logo-dark-color);
+  }
+  
+  .contacts__link {
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    transition: color 250ms var(--transform-function);
+  }
+  
+  .contacts__link:hover,
+  .contacts__link:focus {
+    color: var(--accent-color);
+  }
+  
+  .address__link:hover,
+  .address__link:focus {
+    color: var(--accent-color);
+    transition: transform 250ms var(--transform-function);
+  }
+  
+  /* svg */
+  
+  .contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  
+  .address-link:hover,
+  .address-link:focus {
+    color: var(--accent-color);
+  }
+  
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .site-nav__list .site-nav__link.current {
+    color: var(--accent-color);
+  }
+  
+  .list-icon {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  
+  .site-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Студія, Портфоліо, Контакти */
+  
+  .site-nav__list .site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: var(--primery-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-decoration: none;
+  
+    transition: transform 250ms var(--transform-function);
+  }
+  
+  .site-nav__item {
+    margin-right: 50px;
+  }
+  
+  .site-nav__item:last-child {
+    margin-right: 0;
+  }
+  
+  .contacts__item {
+    display: block;
+    margin-left: 50px;
+  }
+  
+  .site-nav__list {
+    display: flex;
+    margin-left: 93px;
+  }
+  
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .site-nav__link:hover,
+  .site-nav__link:focus {
+    color: var(--accent-color);
+    transition: color 250ms var(--transform-function);
+  }

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primery-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
@@ -9,16 +9,16 @@
   --hero-background-color: #2f303a;
   --social-primery-color: #afb1b8;
   --transform-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.body {
+/* .body {
   color: var(--primery-text-color);
   background-color: var(--primery-white-color);
   font-family: Roboto sans-serif;
   letter-spacing: 0.02em;
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -29,19 +29,17 @@ ul {
   font-family: Roboto;
   padding: 0;
   margin: 0;
-}
+} */
 
-.section {
+/* .section {
   padding: 94px 0px;
-  /* width: 1600px; */
-  /* margin: 0 auto; */
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
 .header {
   border: none;
@@ -599,9 +597,7 @@ img {
 }
 
 .container {
-  /* width: 100%; */
   max-width: 1200px;
-  /* background-color: gold; */
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -877,9 +873,9 @@ img {
 
 /* Форми */
 
-textarea {
+/* textarea {
   resize: none;
-}
+} */
 /* 
 .modal-form {
   position: absolute;
